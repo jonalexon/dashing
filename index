@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0c10">
+<title>Jetour Dashing Ecuador | Grupo Roldán</title>
+<meta name="description" content="Jetour Dashing: SUV con diseño premiado internacionalmente, tecnología ADAS y garantía de por vida en el motor. Versiones FULL, LIMITED MT, LIMITED DCT y RS en Ecuador.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5/800.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow@5/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow@5/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow@5/700.css">
+<style>
+:root{
+  --red:#e10613;
+  --red-dark:#b30510;
+  --bg-dark:#0b0c10;
+  --bg-dark2:#101114;
+  --bg-card:#14161c;
+  --bg-cell:#0f1116;
+  --line-dark:#22252d;
+  --line-dark2:#2a2e37;
+  --bg-light:#f4f5f7;
+  --text:#101114;
+  --text-sec:#5d6470;
+  --text-sec-dark:#9aa1ad;
+  --line-light:#e6e8ec;
+  --header-h:60px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow','Segoe UI',system-ui,sans-serif;background:var(--bg-light);color:var(--text);-webkit-font-smoothing:antialiased;line-height:1.5}
+img{max-width:100%}
+.container{width:100%;max-width:1140px;margin:0 auto;padding:0 20px}
+section{scroll-margin-top:84px}
+
+/* ===== Topbar ===== */
+.topbar{background:var(--red);color:#fff;font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:600;font-size:13.5px;letter-spacing:1.4px;text-transform:uppercase;display:flex;align-items:center;justify-content:center;height:36px;padding:0 16px;white-space:nowrap;overflow-x:auto;scrollbar-width:none}
+.topbar::-webkit-scrollbar{display:none}
+
+/* ===== Header ===== */
+.hdr{position:sticky;top:0;z-index:60;background:#0b0c10;border-bottom:1px solid #1e2127;transition:box-shadow .3s ease}
+.hdr.scrolled{box-shadow:0 12px 30px rgba(0,0,0,.5)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:var(--header-h)}
+.brand{display:flex;align-items:baseline;gap:8px;text-decoration:none;font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:22px;letter-spacing:1px;line-height:1}
+.b-marca{color:#fff}
+.b-modelo{color:var(--red)}
+.b-pais{color:#9aa1ad;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase}
+.nav{display:none;align-items:center;gap:4px}
+.nav a{color:#c6ccd6;text-decoration:none;font-weight:600;font-size:14.5px;padding:12px 14px;border-radius:8px;transition:color .25s,background .25s}
+.nav a:hover{color:#fff;background:rgba(225,6,19,.14)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:10px;font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:17px;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .3s,border-color .3s,color .3s,transform .3s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dark)}
+.btn-ghost{background:transparent;border-color:rgba(255,255,255,.35);color:#fff}
+.btn-ghost:hover{border-color:var(--red);color:#ff8087}
+.btn-sm{min-height:44px;padding:0 20px;font-size:15px}
+
+/* ===== Hero ===== */
+.hero{position:relative;background:
+ radial-gradient(760px 360px at 82% -5%,rgba(225,6,19,.22),transparent 62%),
+ radial-gradient(560px 320px at 6% 105%,rgba(225,6,19,.12),transparent 60%),
+ #0b0c10;color:#fff;padding:78px 0 60px;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(225,6,19,.22);pointer-events:none}
+.hero::before{width:380px;height:380px;right:-140px;top:-140px}
+.hero::after{width:230px;height:230px;right:-60px;top:-60px;border-color:rgba(225,6,19,.14)}
+.hero-inner{position:relative;z-index:2;max-width:840px}
+.h1{font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:clamp(2rem,4vw,3rem);line-height:1.05;letter-spacing:.5px;text-transform:uppercase;margin:18px 0 16px}
+.h1 span{color:var(--red)}
+.hero-sub{color:#c6ccd6;font-size:clamp(1rem,1.6vw,1.15rem);line-height:1.65;max-width:680px}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px}
+.pill{background:rgba(225,6,19,.14);border:1px solid rgba(225,6,19,.45);color:#ff8087;font-size:12.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+.pill.ghost{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.22);color:#c6ccd6}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.beam-track{position:absolute;left:0;right:0;bottom:0;height:2px;overflow:hidden;z-index:2}
+.beam{width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(225,6,19,.95),transparent);animation:beamMove 5.5s linear infinite}
+@keyframes beamMove{from{transform:translateX(-110%)}to{transform:translateX(240%)}}
+
+/* ===== Stats ===== */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;background:#22252d;padding:10px;border-radius:16px;margin-top:44px}
+.stat{background:#0f1116;border-radius:12px;padding:18px 14px;text-align:center}
+.stat-num{font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:clamp(1.9rem,3.4vw,2.6rem);color:#fff;line-height:1}
+.stat-num span{color:var(--red);font-size:.55em;font-weight:700;margin-left:5px;letter-spacing:.5px}
+.stat-lbl{color:#9aa1ad;font-size:12.5px;margin-top:7px;letter-spacing:.3px}
+
+/* ===== Sections ===== */
+.section{padding:74px 0}
+.section.light{background:var(--bg-light)}
+.section.white{background:#fff}
+.section.dark{background:radial-gradient(720px 340px at 85% 0%,rgba(225,6,19,.14),transparent 60%),#0b0c10;color:#fff}
+.section.dark.alt{background:radial-gradient(720px 340px at 10% 100%,rgba(225,6,19,.12),transparent 60%),#0b0c10;border-top:1px solid #1a1d23}
+.sec-head{max-width:780px;margin-bottom:38px}
+.kicker{font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:700;color:var(--red);letter-spacing:3.5px;text-transform:uppercase;font-size:13px}
+.sec-title{font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:clamp(1.5rem,3vw,2.25rem);line-height:1.1;margin:8px 0 14px}
+.sec-lead{color:var(--text-sec);font-size:16px;line-height:1.65}
+.section.dark .sec-lead{color:#9aa1ad}
+.sec-line{width:56px;height:4px;background:var(--red);border-radius:2px;margin-top:18px}
+
+/* ===== Presentación ===== */
+.present p{color:var(--text-sec);font-size:16.5px;line-height:1.7;max-width:820px}
+.present p+p{margin-top:16px}
+.present strong{color:var(--text)}
+.p-badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.p-badge{background:rgba(225,6,19,.09);color:var(--red);font-weight:700;font-size:13.5px;padding:8px 16px;border-radius:999px;letter-spacing:.3px}
+
+/* ===== Curiosos ===== */
+.cur-grid{display:grid;gap:24px}
+.cur-card{position:relative;background:radial-gradient(circle at 18% -10%,rgba(225,6,19,.14),transparent 55%),#14161c;border:1px solid #22252d;border-left:4px solid var(--red);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:12px;transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease,opacity .35s ease}
+.cur-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(0,0,0,.45);border-color:#333845}
+.cur-ico{width:44px;height:44px;border-radius:50%;background:rgba(225,6,19,.15);display:flex;align-items:center;justify-content:center;font-size:20px;flex:0 0 auto}
+.cur-card h3{font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:clamp(1.1rem,2vw,1.4rem);color:#fff;line-height:1.15}
+.cur-card p{color:#9aa1ad;font-size:14.5px;line-height:1.6}
+
+/* ===== Selector sticky ===== */
+.vtab-bar{position:sticky;top:calc(var(--header-h) - 1px);z-index:50;background:#101114;border-bottom:1px solid #2a2e37;box-shadow:0 12px 28px rgba(0,0,0,.28)}
+.vtab-in{display:flex;align-items:center;gap:14px}
+.vtab-label{font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#9aa1ad;font-size:12.5px;white-space:nowrap}
+.vtabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:10px 2px;flex:1}
+.vtabs::-webkit-scrollbar{display:none}
+.vtab{flex:0 0 auto;min-height:44px;padding:0 22px;border-radius:10px;background:#14161c;border:1px solid #2a2e37;color:#c9ced6;font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:600;font-size:16px;letter-spacing:1.2px;cursor:pointer;white-space:nowrap;transition:transform .3s cubic-bezier(.22,.61,.36,1),background .3s,border-color .3s,box-shadow .3s,color .3s}
+.vtab:hover{border-color:rgba(225,6,19,.6);color:#fff}
+.vtab:active{transform:scale(.96)}
+.vtab.active{background:var(--red);border-color:var(--red);color:#fff;transform:scale(1.02);box-shadow:0 8px 20px rgba(225,6,19,.35)}
+
+/* ===== Acordeones ===== */
+.feat-lead{color:var(--text-sec);font-size:15.5px;line-height:1.6;max-width:820px;margin:26px 0 24px}
+.acc-list{display:flex;flex-direction:column;gap:14px}
+.acc{background:#fff;border:1px solid var(--line-light);border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(16,17,20,.05)}
+.acc-head{width:100%;display:flex;align-items:center;gap:12px;background:#14161c;color:#fff;border:none;padding:12px 16px;min-height:54px;font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:600;font-size:clamp(1.1rem,2vw,1.4rem);cursor:pointer;text-align:left;transition:background .25s}
+.acc-head:hover{background:#191c24}
+.acc-emoji{font-size:1.15em;line-height:1}
+.acc-count{margin-left:auto;font-family:'Barlow',sans-serif;font-size:12px;font-weight:600;color:#9aa1ad;background:#0f1116;border:1px solid #2a2e37;padding:3px 10px;border-radius:999px;white-space:nowrap;letter-spacing:.4px}
+.acc-chev{color:var(--red);font-size:1.1em;transition:transform .3s ease;flex:0 0 auto}
+.acc.open .acc-chev{transform:rotate(180deg)}
+.acc-panel{max-height:0;overflow:hidden;opacity:0;transition:max-height .45s cubic-bezier(.22,.61,.36,1),opacity .35s ease;background:#fff}
+.acc.open .acc-panel{opacity:1}
+.acc-grid{display:grid;grid-template-columns:1fr;gap:14px;padding:18px}
+
+/* ===== Tarjetas de equipamiento ===== */
+.fcard{position:relative;background:#fff;border:1px solid var(--line-light);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:9px;transition:opacity .35s ease,border-color .35s ease,box-shadow .35s ease,transform .35s ease}
+.fcard h4{font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:600;font-size:clamp(1.1rem,2vw,1.4rem);line-height:1.15;color:#101114}
+.fcard.version-on{border-color:rgba(225,6,19,.35)}
+.fcard.version-on:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(16,17,20,.1)}
+.fcard p{color:var(--text-sec);font-size:14.5px;line-height:1.6}
+.fcard p b{color:var(--text)}
+.avail{align-self:flex-start;background:rgba(225,6,19,.09);color:var(--red);font-size:11.5px;font-weight:700;letter-spacing:.5px;padding:3px 10px;border-radius:999px;text-transform:uppercase}
+.off-badge{display:none;position:absolute;top:14px;right:14px;background:#eef0f3;color:#5d6470;font-size:10.5px;font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--line-light);letter-spacing:.3px;white-space:nowrap}
+.fcard.version-off{opacity:.35;pointer-events:none;border-color:var(--line-light);box-shadow:none;transform:none}
+.fcard.version-off .off-badge{display:inline-block}
+.fcard.version-off h4{padding-right:140px}
+.wide{grid-column:1/-1}
+.note{grid-column:1/-1;background:rgba(225,6,19,.06);border-left:4px solid var(--red);border-radius:10px;padding:12px 16px;color:#3c414b;font-size:14px;line-height:1.55}
+.colors{display:flex;flex-wrap:wrap;gap:18px;margin-top:6px}
+.color-chip{display:flex;flex-direction:column;align-items:center;gap:6px}
+.dot{width:34px;height:34px;border-radius:50%;border:1px solid var(--line-light);box-shadow:inset 0 0 0 2px #fff}
+.color-chip span{font-size:11.5px;font-weight:600;color:var(--text-sec);letter-spacing:.3px}
+
+/* ===== Tabla comparativa ===== */
+.tbl-wrap{background:#fff;border:1px solid var(--line-light);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(16,17,20,.05)}
+.tbl-scroll{overflow-x:auto;scrollbar-width:none}
+.tbl-scroll::-webkit-scrollbar{display:none}
+table{width:100%;min-width:780px;border-collapse:collapse;font-size:14.5px}
+th,td{padding:12px 14px;border-bottom:1px solid var(--line-light);text-align:center}
+th{font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:15.5px;letter-spacing:.8px;background:#101114;color:#fff;text-transform:uppercase}
+th:first-child,td:first-child{text-align:left}
+td:first-child{font-weight:600;color:#101114;background:#fafbfc}
+.cmp td:nth-child(5){background:rgba(225,6,19,.06)}
+.cmp th:nth-child(5){background:var(--red)}
+tbody tr:last-child td{border-bottom:none}
+.yes{color:var(--red);font-weight:700}
+.no{color:#b7bdc7}
+.tbl-note{margin-top:14px;color:var(--text-sec);font-size:13px}
+.dim-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.dim{background:#fff;border:1px solid var(--line-light);border-radius:999px;padding:8px 16px;font-size:13.5px;font-weight:600;color:#3c414b}
+.dim b{color:var(--red);font-family:'Saira Condensed','Arial Narrow',sans-serif;font-size:15px;letter-spacing:.5px;margin-right:4px}
+
+/* ===== Perfiles ===== */
+.prof-grid{display:grid;gap:20px}
+.prof-card{background:#101114;border:1px solid #2a2e37;border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:14px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.prof-card:hover{transform:translateY(-4px);border-color:var(--red);box-shadow:0 16px 34px rgba(0,0,0,.45)}
+.prof-top{display:flex;align-items:center;gap:12px}
+.prof-ico{width:46px;height:46px;border-radius:50%;background:rgba(225,6,19,.1);display:flex;align-items:center;justify-content:center;font-size:21px;flex:0 0 auto}
+.prof-card h3{font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:clamp(1.1rem,2vw,1.4rem);color:#fff;line-height:1.1}
+.prof-badge{align-self:flex-start;background:rgba(225,6,19,.12);border:1px solid rgba(225,6,19,.45);color:var(--red);font-size:11.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:4px 12px;border-radius:999px}
+.prof-card>p{color:#9aa1ad;font-size:14.5px;line-height:1.6}
+.prof-list{list-style:none;display:flex;flex-direction:column;gap:9px}
+.prof-list li{position:relative;padding-left:19px;color:#c6ccd6;font-size:14px;line-height:1.5}
+.prof-list li::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--red)}
+
+/* ===== Respaldo ===== */
+.r-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;background:#22252d;padding:10px;border-radius:16px;margin-bottom:36px}
+.r-stat{background:#0f1116;border-radius:12px;padding:18px 14px;text-align:center}
+.r-stat .num{font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:800;font-size:clamp(1.7rem,3vw,2.3rem);color:#fff;line-height:1}
+.r-stat .num em{font-style:normal;color:var(--red);font-size:.6em;font-weight:700}
+.r-stat .lbl{color:#9aa1ad;font-size:12.5px;margin-top:6px}
+.resp-grid{display:grid;gap:20px}
+.resp-card{background:#14161c;border:1px solid #2a2e37;border-radius:14px;padding:24px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.resp-card:hover{transform:translateY(-4px);border-color:rgba(225,6,19,.6);box-shadow:0 16px 34px rgba(0,0,0,.45)}
+.resp-ico{width:46px;height:46px;border-radius:50%;background:rgba(225,6,19,.15);display:flex;align-items:center;justify-content:center;font-size:21px;margin-bottom:14px}
+.resp-card h3{font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:clamp(1.1rem,2vw,1.4rem);color:#fff;margin-bottom:10px}
+.resp-card p{color:#9aa1ad;font-size:14.5px;line-height:1.65}
+.resp-card .fine{display:block;margin-top:12px;font-size:12.5px;color:#6b7280}
+
+/* ===== Footer ===== */
+.footer{background:#07080b;color:#9aa1ad;padding:44px 0;border-top:1px solid #1a1d23}
+.footer-in{display:flex;flex-direction:column;gap:22px}
+.footer .brand{font-size:20px}
+.footer-tag{font-size:13.5px;line-height:1.6;max-width:520px;margin-top:10px}
+.footer-col h4{font-family:'Saira Condensed','Arial Narrow',sans-serif;color:#fff;font-weight:700;font-size:16px;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
+.footer-col p{font-size:13.5px;line-height:1.65}
+.footer-bottom{margin-top:30px;padding-top:20px;border-top:1px solid #15181e;font-size:12.5px;line-height:1.6;color:#6b7280}
+
+/* ===== Estados de versión ===== */
+.version-off{opacity:.35;pointer-events:none}
+
+/* ===== Focus visible ===== */
+.vtab:focus-visible,.acc-head:focus-visible,.btn:focus-visible,a:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+/* ===== Responsive ===== */
+@media(min-width:560px){
+  .stats{grid-template-columns:repeat(3,1fr)}
+}
+@media(min-width:640px){
+  .cur-grid{grid-template-columns:repeat(2,1fr)}
+  .prof-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:760px){
+  .acc-grid{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .resp-grid{grid-template-columns:repeat(3,1fr)}
+  .r-stats{grid-template-columns:repeat(4,1fr)}
+}
+@media(min-width:900px){
+  .nav{display:flex}
+}
+@media(min-width:1000px){
+  .stats{grid-template-columns:repeat(6,1fr)}
+}
+@media(min-width:1024px){
+  .cur-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(min-width:1160px){
+  .prof-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:899px){
+  .vtab-label{display:none}
+}
+@media(max-width:640px){
+  .acc-count{display:none}
+  .section{padding:58px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">Grupo Roldán · Jetour · JAC · SANY · YTO · Karry · Textron · Zongshen · +50 años · 27 concesionarios</div>
+
+<div id="hdrSentinel"></div>
+<header class="hdr" id="hdr">
+  <div class="container hdr-in">
+    <a href="#top" class="brand"><span class="b-marca">JETOUR</span><span class="b-modelo">DASHING</span><span class="b-pais">Ecuador</span></a>
+    <nav class="nav">
+      <a href="#modelo">El modelo</a>
+      <a href="#detalles">Detalles</a>
+      <a href="#equipamiento">Equipamiento</a>
+      <a href="#perfiles">Versiones</a>
+      <a href="#respaldo" class="btn btn-red btn-sm">Respaldo</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="pill-row">
+        <span class="pill">SUV</span>
+        <span class="pill ghost">Plataforma Kunlun</span>
+        <span class="pill ghost">4 versiones</span>
+        <span class="pill">Garantía de por vida en el motor</span>
+      </div>
+      <h1 class="h1">Jetour <span>Dashing</span></h1>
+      <p class="hero-sub">El SUV que eleva el estándar de su categoría: un diseño premiado internacionalmente, tecnología que cuida de los tuyos y un respaldo que ninguna otra marca te ofrece en Ecuador.</p>
+      <div class="hero-btns">
+        <a class="btn btn-red" href="#equipamiento">Explorar equipamiento</a>
+        <a class="btn btn-ghost" href="#perfiles">¿Para quién es?</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="stat-num">200<span>HP</span></div><div class="stat-lbl">Potencia máxima (RS)</div></div>
+        <div class="stat"><div class="stat-num">290<span>Nm</span></div><div class="stat-lbl">Torque máximo (RS)</div></div>
+        <div class="stat"><div class="stat-num">15,6<span>″</span></div><div class="stat-lbl">Pantalla central (RS)</div></div>
+        <div class="stat"><div class="stat-num">977<span>L</span></div><div class="stat-lbl">Capacidad de maletero</div></div>
+        <div class="stat"><div class="stat-num">6<span>AIRBAGS</span></div><div class="stat-lbl">Seguridad máxima (RS)</div></div>
+        <div class="stat"><div class="stat-num">2.720<span>MM</span></div><div class="stat-lbl">Distancia entre ejes</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="beam-track"><div class="beam"></div></div>
+</section>
+
+<!-- PRESENTACIÓN -->
+<section class="section light present" id="modelo">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker">El modelo</span>
+      <h2 class="sec-title">Presencia que se nota, calidad que se siente</h2>
+      <div class="sec-line"></div>
+    </div>
+    <p>El <strong>Jetour Dashing</strong> es el SUV con el que Jetour redefine lo que puedes esperar de tu próximo vehículo. Un diseño galardonado internacionalmente, una silueta que roba miradas allá donde va y un nivel de equipamiento pensado para quienes exigen más sin aceptar menos.</p>
+    <p>Está hecho para <strong>familias</strong> que quieren viajar cómodas y protegidas, para <strong>conductores urbanos</strong> que buscan tecnología que les facilite el día a día y para <strong>entusiastas</strong> que disfrutan de un manejo con carácter. Hay un Dashing para cada estilo: desde una versión inteligente y práctica hasta una tope de gama con espíritu deportivo.</p>
+    <p>Tres fortalezas lo hacen único: un <strong>diseño premiado</strong> que destaca por sí solo, <strong>tecnología y seguridad</strong> propias de segmentos muy superiores, y un <strong>respaldo de garantía</strong> que no tiene rival en el mercado ecuatoriano.</p>
+    <div class="p-badges">
+      <span class="p-badge">✨ Diseño premiado</span>
+      <span class="p-badge">🛡️ Tecnología que protege</span>
+      <span class="p-badge">🔧 Garantía sin rival</span>
+    </div>
+  </div>
+</section>
+
+<!-- DATOS CURIOSOS -->
+<section class="section dark" id="detalles">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker">Datos curiosos</span>
+      <h2 class="sec-title">Detalles que marcan la diferencia</h2>
+      <p class="sec-lead">Pequeñas grandes cosas que hacen del Dashing un vehículo distinto a todo lo que has visto en su categoría.</p>
+      <div class="sec-line"></div>
+    </div>
+    <div class="cur-grid" id="curGrid">
+      <article class="cur-card" data-v="full lmtm lmtd rs">
+        <div class="cur-ico">🏆</div>
+        <h3>Premio “Mejor Diseño” 2024</h3>
+        <p>Un jurado internacional lo reconoció como el Mejor Diseño en los premios Coche del Año 2024 en Egipto, imponiéndose frente a marcas establecidas de todo el mundo.</p>
+      </article>
+      <article class="cur-card" data-v="full lmtm lmtd rs">
+        <div class="cur-ico">✨</div>
+        <h3>Manijas que te saludan</h3>
+        <p>Al acercarte con la llave inteligente, las manijas ocultas se despliegan solas, como un saludo de bienvenida. Un detalle propio de autos de lujo.</p>
+      </article>
+      <article class="cur-card" data-v="full lmtm lmtd rs">
+        <div class="cur-ico">⭐</div>
+        <h3>Silueta tipo coupé</h3>
+        <p>La línea del techo desciende hacia la parte trasera, dándole un perfil deportivo que rompe con la silueta tradicional de los SUV.</p>
+      </article>
+      <article class="cur-card" data-v="full lmtm lmtd rs">
+        <div class="cur-ico">💡</div>
+        <h3>Plataforma Kunlun</h3>
+        <p>El Dashing se fabrica sobre la arquitectura modular Kunlun, diseñada para ofrecer rigidez estructural, seguridad y ligereza en todas las versiones.</p>
+      </article>
+      <article class="cur-card" data-v="full lmtm lmtd rs">
+        <div class="cur-ico">🚀</div>
+        <h3>Inspiración de super SUV</h3>
+        <p>Su frontal agresivo y sus líneas musculosas están inspirados en los super SUV italianos más exclusivos. Cuando llega, todos lo miran.</p>
+      </article>
+      <article class="cur-card" data-v="rs">
+        <div class="cur-ico">🛰️</div>
+        <h3>Visión total de 540°</h3>
+        <p>En la RS, la cámara 360° se combina con una cámara inferior de 180° para ver también lo que hay debajo del auto. Estacionar se vuelve un juego de niños.</p>
+      </article>
+      <article class="cur-card" data-v="rs">
+        <div class="cur-ico">🎧</div>
+        <h3>Audio calibrado por Sony</h3>
+        <p>Los ingenieros de Sony participaron personalmente en la calibración del sistema de sonido de la RS para lograr una experiencia auditiva premium.</p>
+      </article>
+      <article class="cur-card" data-v="rs">
+        <div class="cur-ico">🔥</div>
+        <h3>Inyección directa TGDI</h3>
+        <p>En la RS, el combustible se inyecta directamente en el cilindro: más potencia con mayor eficiencia, una tecnología propia de marcas de gama alta.</p>
+      </article>
+      <article class="cur-card" data-v="full lmtm lmtd rs">
+        <div class="cur-ico">🔧</div>
+        <h3>Motor garantizado de por vida</h3>
+        <p>Mientras seas el propietario, el motor del Dashing está cubierto sin límite de kilómetros. Un respaldo que ninguna otra marca ofrece en Ecuador.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ZONA DE VERSIONES + CARACTERÍSTICAS -->
+<div id="featZone">
+  <div class="vtab-bar" id="versiones">
+    <div class="container vtab-in">
+      <span class="vtab-label">Elige tu versión</span>
+      <div class="vtabs">
+        <button type="button" class="vtab" data-ver="full">FULL</button>
+        <button type="button" class="vtab" data-ver="lmtm">LIMITED MT</button>
+        <button type="button" class="vtab" data-ver="lmtd">LIMITED DCT</button>
+        <button type="button" class="vtab active" data-ver="rs">RS</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="section light" id="equipamiento">
+    <div class="container">
+      <div class="sec-head">
+        <span class="kicker">Equipamiento</span>
+        <h2 class="sec-title">Cada versión, a fondo</h2>
+        <div class="sec-line"></div>
+      </div>
+      <p class="feat-lead">Selecciona una versión en el selector para ver exactamente qué incluye. Las tarjetas atenuadas corresponden a equipamiento no disponible en la versión elegida. Despliega cada categoría para conocer el detalle completo.</p>
+
+      <div class="acc-list">
+
+        <!-- DISEÑO EXTERIOR -->
+        <div class="acc">
+          <button type="button" class="acc-head"><span class="acc-emoji">🎨</span><span>Diseño exterior</span><span class="acc-count">6 equipamientos</span><span class="acc-chev">▾</span></button>
+          <div class="acc-panel"><div class="acc-grid">
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Iluminación Full LED</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Ver bien de noche es seguridad. El Dashing incorpora <b>faros LED, luces traseras LED, luces de circulación diurna (DRL) y encendido automático</b>. Esto significa que iluminas más, te ven mejor y nunca más te olvidas de encender las luces.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Manijas ocultas</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Las manijas permanecen escondidas en la carrocería y <b>se despliegan solas cuando te acercas</b> con la llave inteligente. Esto significa una silueta limpia y futurista, y un auto que te “saluda” cada vez que llegas.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Silueta coupé y parrilla integrada</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>La línea del techo desciende hacia la trasera y la parrilla frontal se fusiona con la carrocería en una sola pieza, sin costuras visibles. Esto significa la presencia de un SUV con actitud deportiva, validada por el premio internacional <b>“Mejor Diseño” 2024</b>.</p>
+            </article>
+            <article class="fcard" data-v="lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Retrovisores retráctiles eléctricos</h4>
+              <span class="avail">Limited DCT · RS</span>
+              <p>Al estacionar en la calle, los espejos laterales <b>se pliegan eléctricamente</b>. Esto significa menos riesgo de golpes y de robos en espacios reducidos.</p>
+            </article>
+            <article class="fcard" data-v="lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Apertura eléctrica del portaequipaje</h4>
+              <span class="avail">Limited DCT · RS</span>
+              <p>Llegas con las manos llenas de bolsas y el maletero <b>se abre y se cierra con solo presionar un botón</b>. Esto significa comodidad total en el día a día, sin malabares.</p>
+            </article>
+            <article class="fcard wide" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Seis colores para tu personalidad</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>El audaz rojo, el elegante negro, el clásico blanco… sea cual sea tu estilo, hay un Dashing para ti.</p>
+              <div class="colors">
+                <div class="color-chip"><span class="dot" style="background:#c1121f"></span><span>Rojo</span></div>
+                <div class="color-chip"><span class="dot" style="background:#1f4e9c"></span><span>Azul</span></div>
+                <div class="color-chip"><span class="dot" style="background:#101114"></span><span>Negro</span></div>
+                <div class="color-chip"><span class="dot" style="background:#8a919c"></span><span>Gris</span></div>
+                <div class="color-chip"><span class="dot" style="background:#f5f6f8"></span><span>Blanco</span></div>
+                <div class="color-chip"><span class="dot" style="background:#c9ced6"></span><span>Plata</span></div>
+              </div>
+            </article>
+          </div></div>
+        </div>
+
+        <!-- INTERIOR -->
+        <div class="acc">
+          <button type="button" class="acc-head"><span class="acc-emoji">🛋️</span><span>Interior y confort</span><span class="acc-count">9 equipamientos</span><span class="acc-chev">▾</span></button>
+          <div class="acc-panel"><div class="acc-grid">
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Asientos deportivos</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>No solo se ven bien: <b>te sujetan en las curvas</b> para que no te deslices. Esto significa menos fatiga en viajes largos y una postura siempre correcta.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Volante forrado en cuero</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Nada de plástico duro: el volante se siente <b>suave y premium al tacto</b>, kilómetro tras kilómetro.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Climatización para todos</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Aire acondicionado adelante y <b>conductos de ventilación y calefacción bajo el reposabrazos central</b> para las plazas traseras. Esto significa que los pasajeros de atrás también viajan a su temperatura ideal.</p>
+            </article>
+            <article class="fcard" data-v="lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Asiento del conductor eléctrico</h4>
+              <span class="avail">Limited MT · Limited DCT · RS</span>
+              <p>Ajustas tu posición <b>con solo tocar un botón</b>. Esto significa encontrar tu postura perfecta en segundos, sin esfuerzo.</p>
+            </article>
+            <article class="fcard" data-v="lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Asientos con ventilación y calefacción</h4>
+              <span class="avail">Limited MT · Limited DCT · RS</span>
+              <p>En la costa, la ventilación evita que la espalda sude; en la sierra, la calefacción te abriga al instante. Esto significa <b>lujo real en cualquier clima</b> del Ecuador.</p>
+            </article>
+            <article class="fcard" data-v="lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Sunroof panorámico</h4>
+              <span class="avail">Limited DCT · RS</span>
+              <p>Un techo de vidrio que <b>llena la cabina de luz natural</b>. Esto significa que los pasajeros de atrás disfrutan del cielo en cada viaje, sin sensación de encierro.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Luz LED ambiental</h4>
+              <span class="avail">Solo RS</span>
+              <p>Iluminación interior de colores que puedes <b>cambiar según tu estado de ánimo</b>. El habitáculo se siente vivo cada noche.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Climatización por zonas</h4>
+              <span class="avail">Solo RS</span>
+              <p>El conductor puede elegir una temperatura y el copiloto, otra distinta. <b>Cada uno a su gusto</b>, sin discusiones.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Purificación de aire</h4>
+              <span class="avail">Solo RS</span>
+              <p>El sistema <b>filtra y purifica el aire del habitáculo</b>. Esto significa un aire más limpio, ideal para ciudades con smog o para personas con alergias.</p>
+            </article>
+          </div></div>
+        </div>
+
+        <!-- SEGURIDAD -->
+        <div class="acc">
+          <button type="button" class="acc-head"><span class="acc-emoji">🛡️</span><span>Seguridad</span><span class="acc-count">6 equipamientos</span><span class="acc-chev">▾</span></button>
+          <div class="acc-panel"><div class="acc-grid">
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Airbags progresivos</h4>
+              <span class="avail">De 2 a 6 según versión</span>
+              <p><b>2 airbags en la FULL, 4 en las LIMITED y 6 en la RS</b> (frontales, laterales y de cortina). Esto significa un “colchón de aire” que protege a todos los ocupantes desde todos los ángulos.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Frenos de disco en las 4 ruedas</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Muchos vehículos de este segmento usan tambores en el eje trasero; el Dashing frena con <b>disco en las cuatro ruedas</b>. Esto significa frenadas más potentes, consistentes y seguras.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>ABS + EBD + EBA: frenada perfecta</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>El <b>ABS</b> (frenado antibloqueo) evita que las ruedas se bloqueen; el <b>EBD</b> (distribución electrónica de frenado) reparte la fuerza entre ejes; y el <b>EBA</b> (asistencia de frenado de emergencia) suma potencia extra si pisas a fondo. En una emergencia, el auto te ayuda a detenerte recto y en menos distancia.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>ESC: control electrónico de estabilidad</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>El ESC detecta pérdidas de tracción y <b>frena ruedas selectivamente</b> para corregir la trayectoria. En una curva con piso mojado, es tu ángel de la guarda: evita derrapes antes de que ocurran.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>HHC y HDC: asistentes de pendiente</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>El <b>HHC</b> (asistente de arranque en pendiente) evita que el auto retroceda al partir en una cuesta; el <b>HDC</b> (asistente de descenso) controla la velocidad al bajar pendientes pronunciadas. En las calles empinadas de Quito o en las bajadas de la sierra, el auto trabaja por ti.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>ISOFIX y recordatorio de cinturón</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Anclajes universales <b>ISOFIX</b> para sillas de niños y recordatorio de cinturón para piloto y copiloto. Esto significa que la familia viaja firme y protegida en cada trayecto.</p>
+            </article>
+          </div></div>
+        </div>
+
+        <!-- ADAS -->
+        <div class="acc">
+          <button type="button" class="acc-head"><span class="acc-emoji">🛰️</span><span>Asistencias a la conducción (ADAS)</span><span class="acc-count">10 equipamientos</span><span class="acc-chev">▾</span></button>
+          <div class="acc-panel"><div class="acc-grid">
+            <div class="note">ADAS significa <b>Sistemas Avanzados de Asistencia a la Conducción</b> (Advanced Driver Assistance Systems): sensores, radares y cámaras que vigilan el entorno del vehículo y te ayudan a prevenir accidentes antes de que ocurran.</div>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Monitoreo de punto ciego</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Un sensor te avisa si hay un vehículo en el ángulo que no ves por los espejos. Esto significa <b>cambiar de carril con confianza</b>, incluso en tráfico denso.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Estacionamiento 3D y sensor posterior</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>La función 3D muestra los obstáculos alrededor del auto <b>como en un videojuego</b>, y el sensor posterior emite alertas al acercarte a un objeto. Estacionar de espaldas deja de ser un riesgo.</p>
+            </article>
+            <article class="fcard" data-v="lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Cámara panorámica 360°</h4>
+              <span class="avail">Limited MT · Limited DCT · RS</span>
+              <p>Cuatro cámaras te muestran <b>todo alrededor del auto, como si lo vieras desde arriba</b>. Esto significa que estacionar en espacios reducidos se vuelve un juego de niños.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>FCW: advertencia de colisión frontal</h4>
+              <span class="avail">Solo RS</span>
+              <p>El sistema te alerta si te acercas demasiado al vehículo de adelante. <b>Esos segundos de aviso pueden evitar un accidente grave</b>.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>RCTA: frenado de emergencia posterior</h4>
+              <span class="avail">Solo RS</span>
+              <p>Al salir de un parqueadero en reversa, si se acerca un auto o una persona, <b>el Dashing frena solo</b>. No tienes que reaccionar: el auto lo hace por ti.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>LDW + LKA: guardianes del carril</h4>
+              <span class="avail">Solo RS</span>
+              <p>El <b>LDW</b> (advertencia de cambio de carril) te avisa si te sales del carril sin accionar la direccional; el <b>LKA</b> (mantenimiento de carril) corrige suavemente la dirección. Es como tener un copiloto que vigila por ti en viajes largos.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Cámara 540°: visión bajo el auto</h4>
+              <span class="avail">Solo RS</span>
+              <p>A la vista 360° se suma una <b>cámara inferior de 180°</b> que muestra lo que hay debajo del vehículo. Así evitas golpear el cárter con piedras o bordillos.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Sensor frontal</h4>
+              <span class="avail">Solo RS</span>
+              <p>Alertas precisas al acercarte a objetos por delante. <b>Estacionar de frente en espacios pequeños es pan comido.</b></p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Control crucero</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Mantiene la velocidad fija en carretera para que <b>descanses el pie</b> en los viajes largos.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Control crucero adaptativo (ACC)</h4>
+              <span class="avail">Solo RS</span>
+              <p>El ACC mantiene la distancia con el auto de adelante, <b>acelerando y frenando solo</b> según el tráfico. En viajes largos o embotellamientos, llegas sin fatiga.</p>
+            </article>
+          </div></div>
+        </div>
+
+        <!-- MOTOR -->
+        <div class="acc">
+          <button type="button" class="acc-head"><span class="acc-emoji">⚙️</span><span>Motor y transmisión</span><span class="acc-count">6 equipamientos</span><span class="acc-chev">▾</span></button>
+          <div class="acc-panel"><div class="acc-grid">
+            <article class="fcard" data-v="full lmtm lmtd">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Motor 1.5 Turbo · 160 HP</h4>
+              <span class="avail">Full · Limited MT · Limited DCT</span>
+              <p>Un motor turbo con <b>160 HP y 230 Nm</b> que entrega potencia sin ser gastón. Esto significa adelantar en carretera sin que el auto se esfuerce.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Motor 1.6 TGDI · 200 HP</h4>
+              <span class="avail">Solo RS</span>
+              <p>Inyección directa más turbo: <b>200 HP y 290 Nm</b> con respuesta inmediata al acelerador, incluso en subidas. Esto significa un empuje propio de segmentos muy superiores.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Caja manual 6MT</h4>
+              <span class="avail">Full · Limited MT</span>
+              <p>Seis velocidades para quienes disfrutan <b>sentir la mecánica</b> y controlar las revoluciones a su manera.</p>
+            </article>
+            <article class="fcard" data-v="lmtd">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Caja automática 6DCT</h4>
+              <span class="avail">Limited DCT</span>
+              <p>Transmisión de <b>doble embrague</b> con cambios en milisegundos. Esto significa que no sientes tirones: solo potencia continua, ideal para el tráfico.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Caja automática 7DCT</h4>
+              <span class="avail">Solo RS</span>
+              <p>Doble embrague de 7 velocidades con <b>embragues bañados en aceite</b> para mayor durabilidad y suavidad. El motor trabaja siempre en su punto óptimo: más respuesta y más eficiencia.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Norma de emisiones Euro VI</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Toda la gama cumple la <b>normativa europea más exigente</b> de emisiones. Esto significa un vehículo más limpio que pasa las revisiones técnicas sin complicaciones.</p>
+            </article>
+          </div></div>
+        </div>
+
+        <!-- SUSPENSIÓN -->
+        <div class="acc">
+          <button type="button" class="acc-head"><span class="acc-emoji">🛞</span><span>Suspensión y rodadura</span><span class="acc-count">4 equipamientos</span><span class="acc-chev">▾</span></button>
+          <div class="acc-panel"><div class="acc-grid">
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Suspensión delantera MacPherson</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Suspensión independiente que <b>absorbe bien los golpes</b> y entrega suavidad en el volante con dirección precisa.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Suspensión trasera Multilink</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>El gran diferenciador del Dashing: cada rueda trasera <b>se mueve de forma independiente</b>, absorbiendo su propio golpe. En un eje rígido, un bache sacude toda la carrocería; aquí no. Es el mismo tipo de suspensión que utilizan los SUV premium, por una fracción del costo. Esto significa confort superior en carreteras en mal estado y más agarre en curvas.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Aros de 19″ · 235/55 R19</h4>
+              <span class="avail">Full · Limited MT · Limited DCT</span>
+              <p>Ruedas grandes con presencia y un <b>perfil que absorbe las imperfecciones</b> del asfalto. Equilibrio perfecto entre estética y confort.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Aros de 20″ · 255/45 R20</h4>
+              <span class="avail">Solo RS</span>
+              <p>Llantas de 20 pulgadas propias de autos deportivos: <b>más agarre y una estética imponente</b>.</p>
+            </article>
+          </div></div>
+        </div>
+
+        <!-- ESPACIO Y CARGA -->
+        <div class="acc">
+          <button type="button" class="acc-head"><span class="acc-emoji">🧳</span><span>Espacio y carga</span><span class="acc-count">4 equipamientos</span><span class="acc-chev">▾</span></button>
+          <div class="acc-panel"><div class="acc-grid">
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Dimensiones generosas</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Con <b>4.590 mm de largo y 1.900 mm de ancho</b>, es más ancho que la mayoría de SUV de su segmento. Esto significa espacio real para hombros y codos: tres adultos atrás viajan cómodos.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Distancia entre ejes de 2.720 mm</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Una batalla larga se traduce en <b>espacio generoso para las piernas</b> en las plazas traseras y mayor estabilidad en carretera. Pasajeros altos viajan sin apuros.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Maletero de 977 litros</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Casi 1.000 litros de capacidad: caben <b>las maletas de toda la familia</b> para un viaje largo, o el coche del bebé sin desarmar.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Tanque de combustible de 57 litros</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>Un tanque grande pensado para la <b>autonomía en viajes largos</b>: llenas y te olvidas de la gasolinera por varios trayectos.</p>
+            </article>
+          </div></div>
+        </div>
+
+        <!-- TECNOLOGÍA -->
+        <div class="acc">
+          <button type="button" class="acc-head"><span class="acc-emoji">📱</span><span>Tecnología y conectividad</span><span class="acc-count">11 equipamientos</span><span class="acc-chev">▾</span></button>
+          <div class="acc-panel"><div class="acc-grid">
+            <article class="fcard" data-v="full lmtm lmtd">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Pantalla central de 12,8″</h4>
+              <span class="avail">Full · Limited MT · Limited DCT</span>
+              <p>Una pantalla táctil gigante desde donde <b>controlas todo el vehículo, como una tablet</b>. Todo se ve claro, grande y al alcance de un toque.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Pantalla central de 15,6″</h4>
+              <span class="avail">Solo RS</span>
+              <p>Del tamaño de la pantalla de un laptop: <b>música, navegación y clima desde un solo lugar</b>. Es el centro de mando más grande de su categoría.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Sony Stereo Surround</h4>
+              <span class="avail">Solo RS</span>
+              <p><b>12 parlantes</b> calibrados por ingenieros de una de las firmas de audio más reconocidas del mundo. Tu música suena como en una sala de conciertos.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Llave inteligente y control de voz</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>El auto detecta tu presencia y <b>se desbloquea sin que saques la llave del bolsillo</b>; además, puedes dar comandos por voz sin quitar las manos del volante.</p>
+            </article>
+            <article class="fcard" data-v="lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Cargador inalámbrico y recordatorio de teléfono</h4>
+              <span class="avail">Limited MT · Limited DCT · RS</span>
+              <p>Dejas el teléfono en la bandeja y <b>se carga solo, sin cables</b>; y al bajarte, el auto te recuerda si lo olvidaste.</p>
+            </article>
+            <article class="fcard" data-v="lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Modos de manejo Eco · Normal · Sport</h4>
+              <span class="avail">Limited DCT · RS</span>
+              <p><b>Tres personalidades en un solo auto</b>: ahorro para la ciudad, equilibrio para el día a día o toda la respuesta cuando la pides.</p>
+            </article>
+            <article class="fcard" data-v="lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Encendido remoto del motor</h4>
+              <span class="avail">Limited DCT · RS</span>
+              <p>Enciende el motor y el aire acondicionado <b>desde la llave, antes de subir</b>. En un día caluroso, el auto ya está fresco cuando llegas.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>EPB con función Autohold</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>El <b>EPB</b> (freno de estacionamiento eléctrico) se activa con un botón; la función <b>Autohold</b> mantiene el auto detenido en un semáforo sin que tengas que pisar el freno.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>TPMS: monitor de presión de llantas</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>El <b>TPMS</b> (sistema de monitoreo de presión de neumáticos) te avisa si una llanta está baja. Esto significa evitar reventones y ahorrar combustible.</p>
+            </article>
+            <article class="fcard" data-v="full lmtm lmtd rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>EMMO: sistema antirrobo de motor</h4>
+              <span class="avail">Todas las versiones</span>
+              <p>El inmovilizador <b>EMMO</b> impide que el motor encienda si alguien intenta arrancarlo sin la llave correcta. Tu auto está protegido incluso cuando no estás.</p>
+            </article>
+            <article class="fcard" data-v="rs">
+              <span class="off-badge">No incluido en esta versión</span>
+              <h4>Limpia parabrisas inteligente y memoria de espejos</h4>
+              <span class="avail">Solo RS</span>
+              <p>Los limpiaparabrisas <b>se activan solos cuando empieza a llover</b> y los retrovisores recuerdan tu posición favorita. Detalles que marcan la diferencia cada día.</p>
+            </article>
+          </div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- COMPARATIVA -->
+<section class="section white" id="comparativa">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker">Comparativa</span>
+      <h2 class="sec-title">Todas las versiones, cara a cara</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="tbl-wrap"><div class="tbl-scroll">
+      <table class="cmp">
+        <thead>
+          <tr><th>Característica</th><th>Full</th><th>Limited MT</th><th>Limited DCT</th><th>RS</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Motor</td><td>1.5 Turbo</td><td>1.5 Turbo</td><td>1.5 Turbo</td><td>1.6 TGDI</td></tr>
+          <tr><td>Potencia</td><td>160 HP</td><td>160 HP</td><td>160 HP</td><td>200 HP</td></tr>
+          <tr><td>Torque</td><td>230 Nm</td><td>230 Nm</td><td>230 Nm</td><td>290 Nm</td></tr>
+          <tr><td>Transmisión</td><td>6 MT</td><td>6 MT</td><td>6 DCT</td><td>7 DCT</td></tr>
+          <tr><td>Airbags</td><td>2</td><td>4</td><td>4</td><td>6</td></tr>
+          <tr><td>Pantalla central</td><td>12,8″</td><td>12,8″</td><td>12,8″</td><td>15,6″</td></tr>
+          <tr><td>Suspensión trasera Multilink</td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td>Cámara panorámica 360°</td><td><span class="no">—</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td>Asiento del conductor eléctrico</td><td><span class="no">—</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td>Asientos ventilados y calefaccionados</td><td><span class="no">—</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td>Sunroof panorámico</td><td><span class="no">—</span></td><td><span class="no">—</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td>Apertura eléctrica del portaequipaje</td><td><span class="no">—</span></td><td><span class="no">—</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td>ADAS completo (FCW · RCTA · LKA)</td><td><span class="no">—</span></td><td><span class="no">—</span></td><td><span class="no">—</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td>Control crucero adaptativo</td><td><span class="no">—</span></td><td><span class="no">—</span></td><td><span class="no">—</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td>Sony Stereo Surround</td><td><span class="no">—</span></td><td><span class="no">—</span></td><td><span class="no">—</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td>Aros</td><td>19″</td><td>19″</td><td>19″</td><td>20″</td></tr>
+        </tbody>
+      </table>
+    </div></div>
+    <p class="tbl-note"><span class="yes">✓</span> Equipamiento incluido · <span class="no">—</span> No disponible. Especificaciones según la ficha técnica oficial vigente para Ecuador.</p>
+    <div class="dim-strip">
+      <span class="dim"><b>4.590 mm</b> Largo</span>
+      <span class="dim"><b>1.900 mm</b> Ancho</span>
+      <span class="dim"><b>1.685 mm</b> Alto</span>
+      <span class="dim"><b>2.720 mm</b> Entre ejes</span>
+      <span class="dim"><b>977 L</b> Maletero</span>
+    </div>
+  </div>
+</section>
+
+<!-- PERFILES -->
+<section class="section dark" id="perfiles">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker">Perfiles</span>
+      <h2 class="sec-title">¿Para quién es este vehículo?</h2>
+      <p class="sec-lead">Cuatro versiones, cuatro personalidades. Encuentra el Dashing que va contigo.</p>
+      <div class="sec-line"></div>
+    </div>
+    <div class="prof-grid">
+      <article class="prof-card">
+        <div class="prof-top"><div class="prof-ico">👤</div><h3>Dashing Full</h3></div>
+        <span class="prof-badge">El inteligente asequible</span>
+        <p>Para conductores prácticos, familias y flotillas que buscan la mejor relación costo-beneficio: seguridad completa y tecnología útil, sin pagar por lo que no necesitan.</p>
+        <ul class="prof-list">
+          <li>Frenos de disco en las cuatro ruedas, algo poco común en versiones de entrada.</li>
+          <li>Monitoreo de punto ciego y estacionamiento 3D de serie.</li>
+          <li>Motor 1.5 Turbo de 160 HP con seguridad activa completa: ABS, EBD, EBA y ESC.</li>
+        </ul>
+      </article>
+      <article class="prof-card">
+        <div class="prof-top"><div class="prof-ico">🎯</div><h3>Dashing Limited MT</h3></div>
+        <span class="prof-badge">El purista con confort</span>
+        <p>Para quienes aman la conexión de una caja manual pero no están dispuestos a renunciar al confort de un vehículo de gama alta.</p>
+        <ul class="prof-list">
+          <li>Caja manual de 6 velocidades para un control total de la conducción.</li>
+          <li>Asientos con ajuste eléctrico, ventilación y calefacción.</li>
+          <li>Cámara panorámica 360° y cargador inalámbrico.</li>
+        </ul>
+      </article>
+      <article class="prof-card">
+        <div class="prof-top"><div class="prof-ico">👤</div><h3>Dashing Limited DCT</h3></div>
+        <span class="prof-badge">El urbano familiar</span>
+        <p>Para familias y conductores de ciudad que quieren la comodidad de una caja automática, espacios luminosos y tecnología que facilita el día a día.</p>
+        <ul class="prof-list">
+          <li>Transmisión automática de doble embrague 6DCT, ideal para el tráfico.</li>
+          <li>Sunroof panorámico y portaequipaje de apertura eléctrica.</li>
+          <li>Encendido remoto y modos de manejo Eco, Normal y Sport.</li>
+        </ul>
+      </article>
+      <article class="prof-card">
+        <div class="prof-top"><div class="prof-ico">🎯</div><h3>Dashing RS</h3></div>
+        <span class="prof-badge">El tecnológico deportivo</span>
+        <p>Para entusiastas que exigen lo máximo: potencia superior, conducción asistida de nivel avanzado y el equipamiento más completo de toda la gama.</p>
+        <ul class="prof-list">
+          <li>Motor 1.6 TGDI de 200 HP con caja 7DCT de doble embrague.</li>
+          <li>ADAS completo: frenado autónomo, mantenimiento de carril y crucero adaptativo.</li>
+          <li>Pantalla de 15,6″ y sonido Sony Stereo Surround de 12 parlantes.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RESPALDO -->
+<section class="section dark alt" id="respaldo">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker">Garantía y respaldo</span>
+      <h2 class="sec-title">Compra con la tranquilidad de saber quién responde</h2>
+      <p class="sec-lead">Detrás de cada Dashing hay décadas de experiencia automotriz y una red nacional lista para acompañarte.</p>
+      <div class="sec-line"></div>
+    </div>
+    <div class="r-stats">
+      <div class="r-stat"><div class="num">+<em>50</em></div><div class="lbl">Años de trayectoria</div></div>
+      <div class="r-stat"><div class="num">27</div><div class="lbl">Concesionarios en el país</div></div>
+      <div class="r-stat"><div class="num">+20<em>.</em>000</div><div class="lbl">Vehículos entregados</div></div>
+      <div class="r-stat"><div class="num">48</div><div class="lbl">Años del aliado estratégico</div></div>
+    </div>
+    <div class="resp-grid">
+      <article class="resp-card">
+        <div class="resp-ico">🔧</div>
+        <h3>Garantía de por vida en el motor</h3>
+        <p>El corazón del Dashing está cubierto <b style="color:#fff">mientras seas el propietario y sin límite de kilómetros</b>. Es la manera en que Jetour demuestra la confianza que tiene en su mecánica: un respaldo que ninguna otra marca ofrece en el mercado ecuatoriano.</p>
+        <span class="fine">Según especificaciones del fabricante para el mercado ecuatoriano.</span>
+      </article>
+      <article class="resp-card">
+        <div class="resp-ico">🏢</div>
+        <h3>Grupo Roldán, distribuidor exclusivo</h3>
+        <p>Más de 50 años de trayectoria automotriz, 27 concesionarios a nivel nacional y más de 20.000 vehículos entregados. Con casa matriz en Plaza Tumbaco, Grupo Roldán representa también a JAC, SANY, YTO, Karry, Textron y Zongshen.</p>
+      </article>
+      <article class="resp-card">
+        <div class="resp-ico">🤝</div>
+        <h3>Grupo Palacios, aliado estratégico</h3>
+        <p>Con 48 años de experiencia, es el distribuidor autorizado de la marca en Ambato y Latacunga, acercando el Dashing y todo su servicio posventa al centro del país.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-in">
+      <div>
+        <span class="brand"><span class="b-marca">JETOUR</span><span class="b-modelo">DASHING</span><span class="b-pais">Ecuador</span></span>
+        <p class="footer-tag">El SUV que eleva el estándar: diseño premiado, tecnología que protege y garantía de por vida en el motor.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Respaldo oficial</h4>
+        <p>Grupo Roldán — Distribuidor exclusivo Jetour en Ecuador · Plaza Tumbaco.<br>Grupo Palacios — Distribuidor autorizado en Ambato y Latacunga.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Jetour Ecuador. Las especificaciones corresponden a la ficha técnica oficial vigente para el mercado ecuatoriano y pueden variar según versión. Consulta disponibilidad, equipamiento y condiciones de garantía en tu concesionario autorizado.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var hdr=document.getElementById('hdr');
+  var sentinel=document.getElementById('hdrSentinel');
+  if(sentinel&&hdr){
+    var io=new IntersectionObserver(function(entries){
+      hdr.classList.toggle('scrolled',!entries[0].isIntersecting);
+    },{threshold:0});
+    io.observe(sentinel);
+  }
+
+  var yearEl=document.getElementById('year');
+  if(yearEl){yearEl.textContent=new Date().getFullYear();}
+
+  var accs=Array.prototype.slice.call(document.querySelectorAll('.acc'));
+  accs.forEach(function(acc){
+    var btn=acc.querySelector('.acc-head');
+    var panel=acc.querySelector('.acc-panel');
+    btn.addEventListener('click',function(){
+      if(acc.classList.contains('open')){
+        acc.classList.remove('open');
+        panel.style.maxHeight='0px';
+      }else{
+        acc.classList.add('open');
+        panel.style.maxHeight=panel.scrollHeight+'px';
+      }
+    });
+  });
+  var firstAcc=accs[0];
+  if(firstAcc){
+    firstAcc.classList.add('open');
+    var firstPanel=firstAcc.querySelector('.acc-panel');
+    firstPanel.style.maxHeight=firstPanel.scrollHeight+'px';
+  }
+  window.addEventListener('resize',function(){
+    document.querySelectorAll('.acc.open .acc-panel').forEach(function(p){
+      p.style.maxHeight=p.scrollHeight+'px';
+    });
+  });
+
+  var tabs=Array.prototype.slice.call(document.querySelectorAll('.vtab'));
+  var featItems=Array.prototype.slice.call(document.querySelectorAll('#featZone [data-v]'));
+  var curItems=Array.prototype.slice.call(document.querySelectorAll('#curGrid [data-v]'));
+  var userPicked=false;
+
+  function applyTo(list,ver){
+    list.forEach(function(el){
+      var ok=el.getAttribute('data-v').split(' ').indexOf(ver)>-1;
+      el.classList.toggle('version-on',ok);
+      el.classList.toggle('version-off',!ok);
+    });
+  }
+  function setVersion(ver,picked){
+    if(picked){userPicked=true;}
+    tabs.forEach(function(t){t.classList.toggle('active',t.dataset.ver===ver);});
+    applyTo(featItems,ver);
+    if(userPicked){applyTo(curItems,ver);}
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){setVersion(t.dataset.ver,true);});
+  });
+  setVersion('rs',false);
+})();
+</script>
+</body>
+</html>
